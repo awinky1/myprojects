@@ -4,33 +4,125 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>My Web Page</title>
+		<!-- this is a comment -->
+		<title>My Web Page</title >
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="urlgoeshere">
 		<style>
+		
+			html {
+				/*font-size: 16px;*/
+				background-color: black;
+				color: white;
+			}
 			p {
 				background-color: aqua;
+				color: black;
 			}
+			h1 {
+				border-top: groove;
+				border-right: groove;
+				border-left: groove;
+				border-color: green;
+				border-top-right-radius: 12px;
+				border-top-left-radius: 12px;
+				color: green;
+				text-align: center;
+			}
+			h3 {
+				border-bottom: groove;
+				border-right: groove;
+				border-left: groove;
+				border-bottom-right-radius: 12px;
+				border-bottom-left-radius: 12px;
+				border-color: greeen;
+			}
+				#firstAnchor {
+				font-size: 25px;
+				font-weight: bold;
+				color: #2F44BD
+			}
+			.Pages {
+				font-size: 1.5em;
+				font-weight: bold;
+				color: #2F44BD
+			}
+			div p {
+				font-style: italic;
+				font-variant: small-caps;
+			}
+			div>p {
+				border: 2px solid;
+				border-color: white;
+			}
+			div+p {
+				font-weight: bold;
+				font-variant: small-caps;
+			}
+			div~p {
+			}
+			
+			input[type] {
+				background-color: green;
+			}
+			input[type]:focus { 
+				border: yellow;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			a:visited {
+			}
+			div :first-letter {
+				text-transform: uppercase;
+				font-size: 1.2em;
+			}
+			
+			#title {
+				text-shadow: -2px -2px 4px red
+			}
+			
 		</style>
 	</head>
 	<body>
-	<h1 style="background-color: greenyellow;">My Web Page!</h1>
-	<h2>By: Me</h2>
-<br>
-	<h1>"Very Important Stuff"</h1>
+	<h1 id="title" style="background-color: greenyellow;margin-bottom: 0;padding-bottom: 12px;">My Web Page!</h1>
+	<h3 style="background-color: greenyellow;margin-top: 0;padding-left: 100px;padding-top: 20px;">By: AW</h3><br>
+	<h2>Very Important Stuff</h2>
 <br>
 	<header>
 		This is text in an HTML document
 		<p lang="he" dir="rtl">עברית טקסט גוז היר</p>
 	</header>
-	<a href="file2.html">Page 2</a>
-	<a href="pages/file3.html">Page 3</a>
-	<img src="favicon.ico" height="200px" width="300px">
+	<a id="firstAnchor" href="http://www.google.com">Google</a>
+	<a class="Pages" href="file2.html">Page 2</a>
+	<a class="Pages" href="pages/file3.html">Page 3</a>
+	<img src="favicon.ico" height="50px" width="100px">
 	<div>
+		&ldquo;Nice Quotes&rdquo;
 		<p><em>interesting</em> stuff go here!</p>
 		<p><strong>more</strong> interesting stuff go here!</p>
-		<p>even more interesting stuff go here!</p>
+		<p>even &nbsp;more interesting stuff go here!</p>
+		<span><p>I'm in a span</p></span>
+		<p>back in div</p>
 	</div>	
+	<p>not in div</p>
+	<input type="text" value="hello"/>
+	<input type="submit"/>
+	<div>
+	<ul>
+	<li><a href="http://www.google.com">Google</a></li>
+	<li><a href="http://www.microsoft.com">Microsoft</a></li>	
+	</ul>
+	<ol>
+	<li>Write HTML</li>
+	<li>Write CSS</li>
+	<li>Write JavaScript</li>
+	</ol>
+	</div>
 	</body>
 
 </html>
